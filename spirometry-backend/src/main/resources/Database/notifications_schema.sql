@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS notifications;
+
+CREATE TABLE notifications (
+    id SERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    message VARCHAR(255) NOT NULL,
+    is_read BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
