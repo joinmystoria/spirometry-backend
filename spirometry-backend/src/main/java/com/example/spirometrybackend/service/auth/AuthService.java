@@ -80,6 +80,7 @@ public class AuthService {
 
     // Helper method to validate password length (can be extended as needed)
     private boolean isValidPassword(String password) {
+
         return password.length() >= 6;
     }
 
